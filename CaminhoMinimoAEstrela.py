@@ -90,9 +90,6 @@ class Local:
         if self.linha > 0 and not grade[self.linha][self.coluna - 1].barreira():
             self.vizinhos.append(grade[self.linha][self.coluna - 1])
 
-    def __lt__(self, outro):
-        return False
-
 
 # calcular a distância entre os pontos p1 e p2 (em L)
 def h(p1, p2):
